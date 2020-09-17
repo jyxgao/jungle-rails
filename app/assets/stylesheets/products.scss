@@ -7,6 +7,17 @@ main section.categories-show {
     flex-wrap:       wrap;
     justify-content: space-around;
 
+    .sold-out-badge {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      color: #FFFFFF;
+      padding: 0.8em 0.5em 0.6em 0.8em;
+      background: #a94442;
+      opacity: 75%;
+      border-radius: 0.5em;
+    }
+    
     .product {
       // flex:      1;
       max-width: 260px;
@@ -19,7 +30,8 @@ main section.categories-show {
       padding-bottom: 80px;
       margin-top:    20px;
       // margin:        10px;
-
+      overflow: hidden;
+      
       header img {
         max-width: 100%;
         max-height: 140px;
