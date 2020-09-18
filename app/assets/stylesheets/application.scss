@@ -11,6 +11,19 @@ body {
   padding-top: 70px;
 }
 
+.user-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-new{
+  display: flex;
+  flex-direction: column;
+}
+.user-new-form {
+  display: flex;
+  flex-direction: column;
+}
 // Bootstrap adjustments
 form.button_to {
   display: inline;
