@@ -128,5 +128,11 @@ RSpec.describe User, type: :model do
       expect(@user.first_name).to match('Louis')
       expect(@user.last_name).to match('Jeans') 
     end
+
+    it 'should return a user using email with white space' do
+      @user = User.authenticate_with_credentials('  jeans1@mail.com ', '123abc')
+      expect(@user.first_name).to match('Louis')
+      expect(@user.last_name).to match('Jeans') 
+    end
   end
 end

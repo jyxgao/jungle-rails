@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   before_save :downcase_field
 
   def self.authenticate_with_credentials(email, password)
-    @user = User.find_by_email(email.downcase).authenticate(password)
+    @user = User.find_by_email(email.strip.downcase).authenticate(password)
   end
 
   def downcase_field
