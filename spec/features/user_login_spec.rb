@@ -23,7 +23,8 @@ RSpec.feature "UserLogins", type: :feature, js: true do
     find_button('Submit').click
     expect(page).to have_content "Products"
     expect(page).to have_content "Signed in as Jones"
-    
+    expect(page).to have_content "Logout"
+
     page.save_screenshot
 
   end
